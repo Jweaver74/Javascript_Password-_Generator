@@ -1,15 +1,32 @@
 // Assignment code here
-function generatePassword(){
-  var numberCharacters = ["0","1","2","3","4","5","6","7","8","9"];
-  var lowercaseCharacters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-  var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-  var specialCharacters = ["!","@","#","$","%","^","&","*","'","(",")","+",",","-",".","/",":",";","<",">","=","?","[","]","{","}",""];
-  
+var generateBtn = document.querySelector("#generate");
+
+  var numbers = ["0","1","2","3","4","5","6","7","8","9"];
+  var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  var uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+  var special = ["!","@","#","$","%","^","&","*","'","(",")","+",",","-",".","/",":",";","<",">","=","?","[","]","{","}",""];
+
+
+function questions(){
+  var isValid = false;
+  do{
+    var length = promt("Choose password lenght between 8 and 128");
+    var askNumbers = confirm("Do you to inculde numbers in you password?");
+    var askLowercase = confirm("Do you want to include lower case letters in your password?");
+    var askUppercase = confirm("Do you want to include upper case letters in your password?");
+    var askSpecial = confirm("Do you want to include special characters in your password?");
+    var responses = {
+      lenght: length,
+      askNumbers: askNumbers,
+      askLowercase: askLowercase,
+      askUppercase: askUppercase,
+      askSpecial: askSpecial
+    }
+  }
 }
 
-
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {

@@ -12,6 +12,8 @@ body,
   padding: 0;
 }
 
+/* main section of generator*/
+
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
@@ -72,6 +74,8 @@ header {
   clear: both;
 }
 
+/* generator button*/
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -97,6 +101,8 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
+/* password location*/
 
 #password {
   -webkit-appearance: none;
