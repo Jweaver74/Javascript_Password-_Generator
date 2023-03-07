@@ -22,7 +22,16 @@ function questions(){
       askUppercase: askUppercase,
       askSpecial: askSpecial
     }
+
+    if((length < 8)||(length > 128))
+    alert("Choose number between 8 and 128");
+    else if ((!askNumbers)&&(!askLowercase)&&(!askUppercase)&&(!askSpecial))
+    alert("You must choose.");
+    else isValid = true;
   }
+  while(!isValid);
+  return responses;
+  
 }
 
 // Get references to the #generate element
