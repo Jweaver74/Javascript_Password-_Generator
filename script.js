@@ -34,6 +34,7 @@ function questions(){
   return responses;
   
 }
+// Get references to the #generate element
 function generatePassword(){
 var passwordOptions = questions();
 var possibleCombo = [];
@@ -69,7 +70,7 @@ return finalPassword;
 }
 
 
-// Get references to the #generate element
+
 
 
 // Write password to the #password input
