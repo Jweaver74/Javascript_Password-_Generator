@@ -10,13 +10,13 @@ var generateBtn = document.querySelector("#generate");
 function questions(){
   var isValid = false;
   do{
-    var length = promt("Choose password lenght between 8 and 128");
+    var length = promt("Choose password length between 8 and 128");
     var askNumbers = confirm("Do you to inculde numbers in you password?");
     var askLowercase = confirm("Do you want to include lower case letters in your password?");
     var askUppercase = confirm("Do you want to include upper case letters in your password?");
     var askSpecial = confirm("Do you want to include special characters in your password?");
     var responses = {
-      lenght: length,
+      length: length,
       askNumbers: askNumbers,
       askLowercase: askLowercase,
       askUppercase: askUppercase,
@@ -33,6 +33,33 @@ function questions(){
   return responses;
   
 }
+function generatePassword(){
+var passwordOptions = questions();
+var possibleCombo = [];
+var finalPassword = "";
+
+if (passwordOptions.askNumbers){
+  for (var i of numbers)
+  possibleCombo.push(i);
+}
+if (passwordOptions.askLowercase){
+  for (var i of lowercase);
+  possibleCombo.push(i);
+}
+if (passwordOptions.askUppercase){
+  for (var i of uppercase);
+  possibleCombo.push(i);
+}
+if (passwordOptions.askSpecial){
+  for(var i of special);
+  possibleCombo.push(i);
+}
+
+console.log(finalPassword);
+
+return finalPassword;
+}
+
 
 // Get references to the #generate element
 
@@ -44,6 +71,10 @@ function writePassword() {
 
   passwordText.value = password;
 
+}
+function generatePassword(){
+  console.log("test")
+  return "Jason"
 }
 
 // Add event listener to generate button
