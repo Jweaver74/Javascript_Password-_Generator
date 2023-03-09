@@ -1,6 +1,6 @@
 # Javascript_Password_Generator
 
-[javascript_Password_Generator](https://jweaver74.github.io/Javascript_Password_Generator/)
+
 
 # Console Errors
 ![alttext](images/Console%20error's.png)
