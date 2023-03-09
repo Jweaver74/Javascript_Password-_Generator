@@ -10,7 +10,7 @@ var generateBtn = document.querySelector("#generate");
 function questions(){
   var isValid = false;
   do{
-    var length = promt("Choose password length between 8 and 128");
+    var length = prompt("Choose password length between 8 and 128");
     var askNumbers = confirm("Do you to inculde numbers in you password?");
     var askLowercase = confirm("Do you want to include lower case letters in your password?");
     var askUppercase = confirm("Do you want to include upper case letters in your password?");
@@ -27,9 +27,10 @@ function questions(){
     alert("Choose number between 8 and 128");
     else if ((!askNumbers)&&(!askLowercase)&&(!askUppercase)&&(!askSpecial))
     alert("You must choose.");
-    else isValid = true;
-  }
-  while(!isValid);
+    else 
+    isValid = true;
+
+  }while(!isValid);
   return responses;
   
 }
@@ -55,6 +56,13 @@ if (passwordOptions.askSpecial){
   possibleCombo.push(i);
 }
 
+console.log(possibleCombo);
+
+for (let index = 0; index < passwordOptions.length; index++) {
+  finalPassword += possibleCombo[Math.floor(Math.random() * possibleCombo.length)];
+
+}
+
 console.log(finalPassword);
 
 return finalPassword;
@@ -72,10 +80,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-function generatePassword(){
-  console.log("test")
-  return "Jason"
-}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
