@@ -46,7 +46,7 @@ if(passwordOptions.askNumbers){
 if(passwordOptions.askLowercase){
   possibleCombo = possibleCombo.concat(lowercase);
 }
-}
+
 if(passwordOptions.askUppercase){
   possibleCombo = possibleCombo.concat(uppercase);
 }
