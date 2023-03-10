@@ -33,3 +33,5 @@ SMU tutor- Anastasia Warren, getting more in dept about functions and log.  She 
 W3 schools- All the info they provide and terminoligy to help define the correct path ways.
 
 Google- Correct responses for every time i googled a word for help.
+
+AskBCS learning Assistant - Helping with the if statements so that the password would contain the proper characters.
