@@ -15,7 +15,7 @@
 [Javascript-Password-Generator](https://jweaver74.github.io/Javascript_Password_Generator/)
 
 ## Why I made this site
-This site had had a starter code to work off of. I created the Javascript to have a working application of a password generator, showing off the tools we have learned up to this point with Javascript.
+This site had a starter code to start the project off of. I created the Javascript to have a working application of a password generator, showing off the tools we have learned up to this point with Javascript.
 
 
 
